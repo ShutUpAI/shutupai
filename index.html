@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>MontageOS</title>
+	<meta name="description" content="Design And Research Institute." />
+	<meta name="keywords" content="Design, Institute" />
+	<link rel="shortcut icon" type="image/x-icon" href="ico.png" mce_href="favicon.ico" />
+	<style>
+		body {
+      OVERFLOW: hidden;
+			background: radial-gradient(80.33% 140% at 100% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+				, #FF6421;
+			background-blend-mode: soft-light, normal;
+			font-family: Helvetica, Arial, sans-serif;
+			font-weight: 500;
+			min-height: 100vh;
+			color: #fff;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		main {
+			position: relative;
+			width: 100%;
+		}
+
+		.content {
+			position: relative;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			margin: 0 auto;
+			min-height: 100vh;
+		}
+
+		.content--fixed {
+			position: fixed;
+			z-index: 10000;
+			top: 0;
+			left: 0;
+			display: grid;
+			align-content: space-between;
+			width: 100%;
+			max-width: none;
+			min-height: 0;
+			height: 100vh;
+			padding: 1.5em;
+			pointer-events: none;
+		}
+
+		.content__title {
+			letter-spacing: -0.025em;
+			font-size: 7vw;
+			line-height: 1;
+			margin: 0;
+			position: relative;
+		}
+	</style>
+</head>
+
+<body class="">
+	<main>
+		<div class="content">
+			<div class="content__inner">
+				<h2 class="content__title">Hello, Montage OS.</h2>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
