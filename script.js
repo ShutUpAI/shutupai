@@ -26,11 +26,8 @@ const translations = {
 };
 
 const languageToggle = document.querySelector('.language-toggle');
+// Detect afresh on every visit; Chinese locales use Chinese, all others English.
 let language = navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en';
-try {
-  const savedLanguage = localStorage.getItem('shutupai-language');
-  if (Object.hasOwn(translations, savedLanguage)) language = savedLanguage;
-} catch { /* Language switching also works when browser storage is unavailable. */ }
 
 function setLanguage(nextLanguage) {
   language = nextLanguage;
@@ -49,7 +46,6 @@ function setLanguage(nextLanguage) {
   languageToggle.textContent = language === 'zh' ? 'EN' : '中文';
   languageToggle.lang = language === 'zh' ? 'en' : 'zh-CN';
   languageToggle.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换为中文');
-  try { localStorage.setItem('shutupai-language', language); } catch { /* Optional persistence. */ }
 }
 
 setLanguage(language);
