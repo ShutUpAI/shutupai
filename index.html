@@ -1,86 +1,56 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="renderer" content="webkit">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Shut Up AI</title>
-	<meta name="description" content="Shut Up AI." />
-	<meta name="keywords" content="OpenAI, ChatGPT, Siri, Apple, Google, Bing" />
-	<link rel="shortcut icon" type="image/x-icon" href="ico.png" mce_href="favicon.ico" />
-	<style>
-		body {
-      OVERFLOW: hidden;
-			background: radial-gradient(80.33% 140% at 100% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
-				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-				, #75a99c;
-			background-blend-mode: soft-light, normal;
-			font-family: Helvetica, Arial, sans-serif;
-			font-weight: 500;
-			min-height: 100vh;
-			color: #fff;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
-		main {
-			position: relative;
-			width: 100%;
-		}
-
-		.content {
-			position: relative;
-			display: grid;
-			justify-content: center;
-			align-items: center;
-			align-content: center;
-			margin: 0 auto;
-			min-height: 100vh;
-		}
-
-		.content--fixed {
-			position: fixed;
-			z-index: 10000;
-			top: 0;
-			left: 0;
-			display: grid;
-			align-content: space-between;
-			width: 100%;
-			max-width: none;
-			min-height: 0;
-			height: 100vh;
-			padding: 1.5em;
-			pointer-events: none;
-		}
-
-		.content__title {
-			letter-spacing: -0.025em;
-			font-size: 7vw;
-			line-height: 1;
-			margin: 0;
-			position: relative;
-		}
-		.mail {
-			font-size: 2vw;
-			text-align: center;
-			font-weight: lighter;
-			margin-top: 2vw;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ed">
+  <title>ShutUpAI — 热爱 AI，但不惯着 AI。</title>
+  <meta name="description" content="热爱 AI，但不惯着 AI。狂热、清醒、犀利。Don't Hate AI. Challenge AI.">
+  <meta property="og:title" content="ShutUpAI — 热爱 AI，但不惯着 AI。">
+  <meta property="og:description" content="We Love AI. We Just Tell It to Shut Up. Don't Hate AI. Challenge AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.shutupai.com/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preload" href="assets/fonts/manrope-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">跳转到主要内容</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="ShutUpAI 首页" data-i18n-label="home">ShutUp<span>AI</span><span class="logo-period" aria-hidden="true">.</span></a>
+      <div class="header-actions">
+        <button class="language-toggle" type="button" aria-label="Switch to English" lang="en" hidden>EN</button>
+        <a class="contact-link" href="https://github.com/ShutUpAI/shutupai/issues"><span data-i18n="discuss">聊聊 AI</span> <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+      </div>
+    </header>
 
-<body class="">
-	<main>
-		<div class="content">
-			<div class="content__inner">
-				<h2 class="content__title">Shut Up AI.</h2>
-				<h2 class="content__title mail">dalton@design.ac.cn</h2>
-			</div>
-		</div>
-	</main>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" lang="en"><span class="headline-line">We Love AI.</span><span class="headline-line">We Just Tell It <br class="hero-break">to <span class="accent">Shut Up.</span></span></h1>
+        <p class="hero-subtitle" data-i18n="subtitle">热爱 AI，但不惯着 AI。</p>
+        <a class="manifesto-link" href="#manifesto" aria-label="向下阅读我们的态度" data-i18n-label="scroll"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
+      </section>
+
+      <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+        <h2 class="visually-hidden" id="manifesto-title" data-i18n="attitude">我们的态度</h2>
+        <article class="principle"><h3><span data-i18n="passion">狂热</span><span class="accent" data-i18n="period">。</span></h3><p data-i18n="passionCopy">坚定 All in AI。<br>相信 AI 会改变世界。</p></article>
+        <article class="principle"><h3><span data-i18n="clarity">清醒</span><span class="accent" data-i18n="period">。</span></h3><p data-i18n="clarityCopy">不迷信 AI，不接受 AI<br>一本正经地胡说八道。</p></article>
+        <article class="principle"><h3><span data-i18n="edge">犀利</span><span class="accent" data-i18n="period">。</span></h3><p data-i18n="edgeCopy">敢吐槽，敢质疑，<br>敢说真话。</p></article>
+      </section>
+
+      <section class="philosophy" aria-labelledby="philosophy-title">
+        <h2 id="philosophy-title" lang="en"><span>Don't Hate AI.</span><br><span class="accent">Challenge AI.</span></h2>
+        <p data-i18n="philosophy">不是讨厌 AI，而是挑战 AI。</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> ShutUpAI</p>
+      <p class="footer-thought" data-i18n="footer">独立思考，永不静音。</p>
+      <nav aria-label="相关链接" data-i18n-label="links"><a href="https://github.com/ShutUpAI/shutupai">GitHub <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></nav>
+    </footer>
+  </div>
 </body>
-
 </html>
